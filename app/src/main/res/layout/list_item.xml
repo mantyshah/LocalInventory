@@ -43,32 +43,26 @@
 
         <TextView
             android:id="@+id/productQuantity"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
             android:textAppearance="?android:textAppearanceSmall"
+            android:textAlignment="viewEnd"
+            android:paddingEnd="10dp"
+            android:paddingStart="0dp"
             tools:text="AAAA"
             android:textStyle="normal"
             />
 
         <TextView
             android:id="@+id/productPrize"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
             android:textAppearance="?android:textAppearanceSmall"
             tools:text="AAAA"
-            android:textStyle="normal"
-            />
-
-        <TextView
-            android:id="@+id/supplierName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:textAppearance="?android:textAppearanceSmall"
-            tools:text="HAHAHA"
-            android:textStyle="italic"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="25dp"
             />
     </LinearLayout>
 
