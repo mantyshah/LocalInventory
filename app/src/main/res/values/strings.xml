@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Local Inventory</string>
+    <string name="category_product_name">Product Name</string>
+    <string name="hint_product_name">Please enter product name</string>
+    <string name="category_product_prize">Product Prize</string>
+    <string name="hint_product_prize">Please enter product prize</string>
+    <string name="category_product_quantity">Product Quantity</string>
+    <string name="category_product_supplier_name">Supplier Name</string>
+    <string name="hint_product_supplier_name">Please enter supplier name</string>
+    <string name="category_product_supplier_phone_number">Supplier Phone Number</string>
+    <string name="hint_product_supplier_phone_number">Please enter supplier phone number</string>
+    <string name="category_product_picture">Product Picture</string>
+
+    <string name="empty_view_title_text">It\'s a bit lonely here</string>
+    <string name="empty_view_subtitle_text">Get started by adding a food item</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="editor_activity_title_edit">Edit Product</string>
+    <string name="editor_activity_title_add">Add Product</string>
+</resources>

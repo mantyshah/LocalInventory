@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_margin"
+    tools:context=".EditorActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".EditorActivity">
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/category_product_name"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+        <EditText
+            android:id="@+id/productNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_product_name"
+            android:inputType="text"
+            style="@style/EditorFieldStyle"
+            />
+
+        <TextView
+            android:id="@+id/productPrize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/category_product_prize"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/productPrizeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_product_prize"
+            android:inputType="number"
+            style="@style/EditorFieldStyle"/>
+
+        <TextView
+            android:id="@+id/quantityProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/category_product_quantity"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="8"
+            >
+
+            <Button
+                android:id="@+id/increase_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="18sp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/quantity_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                tools:text="AAAA"
+                style="@style/EditorFieldStyle"
+                android:gravity="center"
+                android:layout_weight="3"
+                android:maxLength="4"/>
+
+            <Button
+                android:id="@+id/decrease_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="24sp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/supplierName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/category_product_supplier_name"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/supplierNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_product_supplier_name"
+            android:inputType="text"
+            style="@style/EditorFieldStyle"/>
+        <TextView
+            android:id="@+id/supplierPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/category_product_supplier_phone_number"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/supplierPhoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_product_supplier_phone_number"
+            android:inputType="phone"
+            style="@style/EditorFieldStyle"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
