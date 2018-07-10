@@ -23,19 +23,19 @@ public class ProductCursorAdapter  extends CursorAdapter{
 
     @Override
     public void bindView(View view, Context context, Cursor cursor) {
-        TextView productName, productPrize, supplierName;
+        TextView productName, productPrize, productQuantity;
 
         productName = view.findViewById(R.id.productName);
         productPrize = view.findViewById(R.id.productPrize);
-        supplierName = view.findViewById(R.id.supplierName);
+        productQuantity = view.findViewById(R.id.productQuantity);
 
         String name = cursor.getString(cursor.getColumnIndex(ProductEntry.COLUMN_PRODUCT_NAME));
         String prize = cursor.getString(cursor.getColumnIndex(ProductEntry.COLUMN_PRODUCT_PRIZE));
-        String supplier = cursor.getString(cursor.getColumnIndex(ProductEntry.COLUMN_SUPPLIER_Name));
+        String quantity = cursor.getString(cursor.getColumnIndex(ProductEntry.COLUMN_PRODUCT_QUANTITY));
 
         productName.setText(name);
         productPrize.setText(prize);
-        supplierName.setText(supplier);
+        productQuantity.setText(quantity);
 
     }
 }
